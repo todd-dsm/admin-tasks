@@ -12,6 +12,7 @@ If you're looking to become a more powerful sys-admin, this is the bulk of what 
 
 The Main Sections are:
 * [security]
+  * Common [OpenSSH] operations
 * [shell] Stuff
   * [vim]
   * shell scripting: `bash`
@@ -30,6 +31,7 @@ These are _ONLY_ the useful commands; the stuff I can't live without. I hope the
 Cheers!
 
 [security]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/security.md
+[OpenSSH]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/ssh.md
 [shell]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/shell.md
 [vim]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/vim.md
 [sed]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/sed.md
