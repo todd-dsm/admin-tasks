@@ -127,6 +127,24 @@ service sshd restart
 
 ---
 
+## Secure Copy files Between Hosts
+
+Secure Copy file from remote-host to localhost current working directory:
+
+```shell
+scp user@host:/home/build/filename .
+```
+
+Secure Copy file from remote-host to localhost current working directory:
+
+```shell
+scp file user@host:/home/filename
+```
+
+Super simple.
+
+---
+
 # sshfs
 
 This program works great to mount a remote share as if it were local. If you'd even like to mount it at boot time, add it to `/etc/fstab` as you would any other mount.
