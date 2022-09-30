@@ -21,6 +21,7 @@ The Main Sections are:
 * [awk] 1-Liners
 * [find]
 * [missileanus] odds and ends.
+  * [package-management]
 
 ---
 
@@ -38,3 +39,4 @@ Cheers!
 [awk]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/awk.md
 [find]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/find.md
 [missileanus]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/missileanus.md
+[package-management]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/package-managers.md
