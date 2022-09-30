@@ -125,6 +125,50 @@ systemctl restart sshd, or
 service sshd restart
 ```
 
+---
+
+# sshfs
+
+This program works great to mount a remote share as if it were local. If you'd even like to mount it at boot time, add it to `/etc/fstab` as you would any other mount.
+
+Create a mount directory
+
+`sudo mkdir /mnt/yo`
+
+Connect pull the remote directory into the local filesystem
+
+`sudo sshfs -o allow_other,defer_permissions,IdentityFile=~/.ssh/id_rsa user@remote: /mnt/yo/`
+
+Verify the remote share has mounted
+
+```shell
+ls -l /mnt/yo
+total 36
+drwxr-xr-x 1 root wheel 4096 Jan 24 10:40 Desktop
+drwxr-xr-x 1 root wheel 4096 Jan 24 10:40 Documents
+...
+drwxrwxr-x 1 root wheel 4096 Jan 24 10:50 vms
+```
+
+Unmount when done
+
+```shell
+sudo umount /mnt/yo/
+```
+
+Verify the share is unmounted
+
+```shell
+ls -l /mnt/yo
+total 0
+```
+
+Remove the local mount point
+
+```shell
+sudo rm -rf /mnt/yo
+```
+
 [the math]:https://youtu.be/q7E1VDOKryc?t=271
 [Science Of Secrecy]:https://youtu.be/oR0_LPbWxe4
 [Advanced ssh]:https://fedoramagazine.org/fedora-28-better-smart-card-support-openssh/
