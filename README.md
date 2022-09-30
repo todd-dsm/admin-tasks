@@ -27,10 +27,10 @@ These are _ONLY_ the useful commands; the stuff I can't live without. I hope the
 
 Cheers!
 
-[security]
-[shell]
-[vim]
-[sed]
-[awk]
-[find]
-[missileanus]
+[security]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/security.md
+[shell]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/shell.md
+[vim]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/vim.md
+[sed]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/sed.md
+[awk]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/awk.md
+[find]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/find.md
+[missileanus]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/missileanus.md
