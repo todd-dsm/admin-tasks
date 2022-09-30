@@ -1,10 +1,12 @@
 # admin-tasks
 
-A patchwork of sys-admin commands that have served me well over the years. I've been doing this stuff for almost 30 years and for some reason I have to look this stuff up - every single time :expressionless:
+This is a patchwork of sys-admin commands that have served me well over the years. I've been doing this stuff for almost 30 years and for some reason I have to look this stuff up - every single time :expressionless:
 
 So, I'm constantly looking up some of the most valuable tools in the tool belt. Maybe it's time to share/purge them?
 
 This repo is a collection of those commands/tools/techniques.
+
+If you're looking to become a more powerful sys-admin, this is the bulk of what you'll need. I can move mountains with Vim, Bash and OpenSSH. Alternately, if you're looking level-up your DevOps skills, there probably isn't a lot of value here.
 
 ---
 
