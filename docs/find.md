@@ -127,8 +127,77 @@ This one searches:
 
 ## Find files by Content
 
+For a majority of searches this works great
+
+```shell
+% sudo find /dir/path/ -type f -exec grep 'string' {} +
+```
+
+Or, add line numbers by passing the `-n` argument to `grep`
+
+```shell
+$ sudo find /etc/ -type f -name 'shells' -exec grep -Hn bash {} +
+/etc/shells:2:/bin/bash
+/etc/shells:4:/usr/bin/bash
+```
+
+Find any links to reference file ('/tmp/yo') and grep found files for a string
+
+```shell
+% ln -s /tmp/yo yo
+
+% cat yo                                               
+a1 b1 c1
+a2 b2 c2
+a3 b3 c3
+
+find -L . -type f -samefile /tmp/yo
+./yo
+
+find -L . -type f -samefile /tmp/yo -print0 | xargs -0 grep -FzZ 'b2'
+```
+
+* -F, Interpret PATTERN as a list of fixed strings, separated by newlines, any of which is to be matched.
+* -Z, Output a zero byte (the ASCII NUL character) instead of the character that normally follows a file name.
+* -z, Treat the input as a set of lines, each terminated by a zero byte (the ASCII NUL character) instead of a newline.
 
 
+## Being Selective
+
+Don't descend past the root directory, in this case: `/etc/`
+
+```shell
+$ sudo find /etc/ -maxdepth 1 -type f -exec grep -i 'localhost' {} +
+```
+
+
+### Pruning
+
+Search the whole filesystem except...
+
+```shell
+$ sudo find / -name "proc" -prune , -name "dev" -prune , -name "udev" -prune , -name "sys" -prune , -perm -0002
+```
+
+Save all output to a file:
+
+```shell
+sudo find / -name "proc" -prune , -name "run" -prune -o -perm -0002 -type f \( -fprintf /tmp/find-out.log '%#M  %u  %g  %p\n' \)
+```
+
+Create a list of dates associated with file names:
+
+```shell
+find ~/code/ -type f -name '*.sh' \( -fprintf /tmp/find-out.log '%AY%Am%Ad %p\n' \)
+```
+
+The list can later be sorted by date to find the latest files touched.
+
+List Contents of All found Zip files
+
+```shell
+find ~/Downloads -type f -name '*.zip' -exec zipinfo -m {} \;
+```
 
 [site]:https://mywiki.wooledge.org/UsingFind
 [name expressions]:https://alvinalexander.com/blog/post/linux-unix/find-how-multiple-search-patterns-filename-command/
