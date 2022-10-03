@@ -1,6 +1,6 @@
 # admin-tasks
 
-This is a patchwork of sys-admin commands that have served me well over the years. I've been doing this stuff for almost 30 years and for some reason I have to look this stuff up - every single time :expressionless:
+This is a patchwork of sys-admin _stuff_ that have served me well over the years. I've been doing automating systems for almost 30 years and for some reason I have to look this stuff up - every single time :expressionless:
 
 So, I'm constantly looking up some of the most valuable tools in the tool belt. Maybe it's time to share/purge them?
 
@@ -14,15 +14,14 @@ The Main Sections are:
 * [security]
   * Common [OpenSSH] operations
 * [shell] Stuff
-  * [vim]
-  * shell scripting: `bash`
-  * systems/operational widgets
+* [vim]
 * [sed], curated one-liners
 * [awk] 1-Liners
 * [find]
 * [missileanus] odds and ends.
   * [package-management]
-
+* shell [scripting]: `bash`
+* systems/operational [widgets]
 ---
 
 These things are deteriorating in usefulness every year; the new tools require less and less of this stuff. Personally, I'll be happy when these things are no longer required at all. But, until then...
@@ -40,3 +39,5 @@ Cheers!
 [find]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/find.md
 [missileanus]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/missileanus.md
 [package-management]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/package-managers.md
+[scripting]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/bash-programming.md
+[widgets]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/widgets.md
