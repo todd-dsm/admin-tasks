@@ -64,6 +64,14 @@ We can find and remove these files in bulk
 ...
 ```
 
+Find any file over 1MB; output: file size and path
+
+```shell
+find "$HOME" -type f -size +1024k -exec ls -lh {} \; | awk '{ print $5 ": " $9 }'
+...
+1.8M: /Users/$USER/Pictures/Photos
+```
+
 Find any files `>500MB`
 
 ```shell
@@ -197,6 +205,17 @@ List Contents of All found Zip files
 
 ```shell
 find ~/Downloads -type f -name '*.zip' -exec zipinfo -m {} \;
+```
+
+
+## Changing permissions en masse
+
+Set the required permissions on types of filesystem objects
+
+```shell
+find . -type f -exec chmod 644 {} \;
+find . -type d -exec chmod 755 {} \;
+find . -uid 1000 -exec chown 1010:1010 {} \;
 ```
 
 [site]:https://mywiki.wooledge.org/UsingFind
