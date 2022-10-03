@@ -24,8 +24,8 @@ As you can see, the location of the binary is different when some OS conditions 
 
 Instead, always use `env` to [locate Bash] when writing a script:
 
-| Do           | Do NOT      |
-|--------------|-------------|
+| Do                    | Do NOT        |
+|-----------------------|---------------|
 | `#!/usr/bin/env bash` | `#!/bin/bash` |
 
 Use env and your scripts will work everywhere. Don't, and you're entering a world of pain.
@@ -59,7 +59,7 @@ The file extensions are for humans; they are irrelevant to the system. The relev
 On the internet, there are dozens of bad technical answers for every good answer. The source of your inbound information is more important every day. If this is true, there
 s really only one place to go for Bash scripting answers.
 
-BashGuide - [Greg's Wiki]; these guys have forgotten more about Bash than most people will ever know - and they show their testing with the _whys_ and _why nots_. What more could you ask?
+BashGuide - [Greg's Wiki]; these guys have forgotten more about Bash than most people will ever know - and they show their testing with the _whys_ and _why-nots_. What more could you ask?
 
 My Google search looks like this: `site:mywiki.wooledge.org searchString`; yours should too. 
 
