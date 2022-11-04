@@ -39,6 +39,14 @@ Uncomment lines 4-45
 
 `4,45s/^#//g`
 
+Remove the **first** _**n**_ characters of every line; example `n=6`:
+
+`%s/^.\{0,6\}//g`
+
+Remove the **last** _**n**_ characters of every line; example `n=6`:
+
+`%s/.\{6}$//`
+
 Move indentation to left for every line
 
 `:%normal <<`
