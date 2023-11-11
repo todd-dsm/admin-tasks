@@ -19,7 +19,7 @@ git pull --all
 Sometimes you just need to boil everything down to a new starting point; for those times:
 
 ```sh
-git reset $(git commit-tree HEAD^{tree} -m "initial-commit")
+git reset $(git commit-tree HEAD^{tree} -m "Initial Commit")
 ```
 
 ~[taylorsmithgg]
