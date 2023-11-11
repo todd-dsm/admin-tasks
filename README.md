@@ -14,6 +14,7 @@ The Main Sections are:
 * [security]
   * Common [OpenSSH] operations
 * [shell] Stuff
+* [git] priceless operations
 * [vim]
 * [sed], curated one-liners
 * [awk] 1-Liners
@@ -33,7 +34,7 @@ Cheers!
 [security]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/security.md
 [OpenSSH]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/ssh.md
 [shell]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/shell.md
-[vim]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/vim.md
+[git]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/git.md
 [sed]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/sed.md
 [awk]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/awk.md
 [find]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/find.md
