@@ -11,7 +11,9 @@ docs
 
 Display users with UIDs greater than 1000
 
-`awk -F: '$3 > 1000 { print $0 }' /etc/passwd`
+```bash
+awk -F: '$3 > 1000 { print $0 }' /etc/passwd
+```
 
 For everything else, this a [deep subject]; the [simplified] version.
 
