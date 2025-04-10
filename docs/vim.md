@@ -1,26 +1,35 @@
 # Systems Programming
 
-### Vim - The Power and The Glory
+## Vim - The Power and The Glory
 
 * [Using Vim]
 * [Customizing Vim]
 
 Global Search and Replace
 
-```shell
+```vim
 :%s/search_string/replacement_string/g
 ```
 
 Delete a range of lines, starting with line n through m, followed by a d (delete):
 
-```shell
+```vim
 :1,7d
 ```
+
 (this will delete the range of lines 1 through 7)
+
+Reset tabs from whatever to 4 spaces
+
+This tells vim: the current tabstop (2) and to not expand tabs (noet), then retab the file, set et (expand tabs) to 4 spaces, and retab again.
+
+```vim
+:set ts=2 noet | retab! | set et ts=4 | retab
+```
 
 Comment multiple lines
 
-```shell
+```vim
 :1,$s/^#/\ \ /g
 ```
 
