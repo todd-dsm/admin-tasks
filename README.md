@@ -35,6 +35,7 @@ Cheers!
 [OpenSSH]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/ssh.md
 [shell]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/shell.md
 [git]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/git.md
+[vim]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/vim.md
 [sed]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/sed.md
 [awk]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/awk.md
 [find]:https://github.com/todd-dsm/admin-tasks/blob/main/docs/find.md
