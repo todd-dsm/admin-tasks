@@ -14,6 +14,16 @@ I once turned a 3-month job into a 15-minute job with this command - just by bei
 
 Using multiple [name expressions], [an example].
 
+## Find all `.DS_Store` files
+
+This is a macOS Classic. This form of the command should work on GNU/BSD forms of find; be careful and test though.
+
+```shell
+find ~/Downloads -name '.DS_Store' -exec ls -l {} +
+```
+
+Then replace `ls -l -> rm -f` and rerun the `ls` variant again after. Why Apple... why?
+
 ## Search for multiple strings
 
 ```shell
